@@ -1,0 +1,29 @@
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.btn{
+    border: none;
+    margin: 20px;
+    padding: 24px;
+    width: 150px;
+    height: 70px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: 0.6s;
+    background-size: 200%;
+    background-image: linear-gradient(to left,#c4e538,#009432,#c4e538);
+}
+
+.btn:hover{
+    background-position: right;
+}
+
