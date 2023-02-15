@@ -8,7 +8,7 @@ const button = document.querySelector(".btn").addEventListener("click", (e) => {
   console.log(mdp, confmdp);
 
   if (mdp === "" || confmdp === "" || mdp != confmdp) {
-    verification.textContent = "le mots de passe que vous avez saise sont identique"
+    verification.textContent = "le mode de passe que vous avez saisie ne sont pas identique"
     verification.style.color = "red"
     e.preventDefault();
   }
