@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commencer{
+     background-color:#f8938f ;
+       color: white;
+        padding: 24px;
+       text-decoration: none;
+       border: 1px solid white;
+       font-size: 40px;
+}
+
+.commencer:hover{
+       transition: 0.3s;
+       background-color: white;
+       color: #f98068;
+       border: 1px solid #f8938f;
+       
+}

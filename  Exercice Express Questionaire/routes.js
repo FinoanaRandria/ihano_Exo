@@ -7,7 +7,7 @@ const router = Router()
 
 router.get('/',home)
 
-router.get('/quiz1',quiz1)
+
 
 
 
