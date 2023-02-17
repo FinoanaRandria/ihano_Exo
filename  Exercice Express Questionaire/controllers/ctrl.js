@@ -23,13 +23,13 @@ exports.post1 = (req,res)=>{
 exports.post2 = (req,res)=>{
 
 
-  if(req.body.question2 == "masisou" || req.body.question1 == "dubai" || req.body.question1 == "sql" ){
+  if(req.body.question2 == "masisou" || req.body.question2 == "dubai" || req.body.question2 == "sql" ){
        res.render('quiz3')
   }else{
    res.render('quiz2')
   }
 
-  console.log(req.body.question1)
+  console.log(req.body.question2)
   res.end()
 }
 
@@ -37,13 +37,13 @@ exports.post2 = (req,res)=>{
 exports.post3 = (req,res)=>{
 
 
-  if(req.body.question3 == "eliot" || req.body.question1 == "angela" || req.body.question1 == "whiterose" ){
+  if(req.body.question3 == "eliot" || req.body.question3 == "angela" || req.body.question3 == "whiterose" ){
        res.render('quiz4')
   }else{
    res.render('quiz3')
   }
 
-  console.log(req.body.question1)
+  console.log(req.body.question3)
   res.end()
 }
 
@@ -51,12 +51,26 @@ exports.post3 = (req,res)=>{
 exports.post4 = (req,res)=>{
 
 
-  if(req.body.question4 == "Masisou" || req.body.question1 == "Dubai" || req.body.question1 == "Sql" ){
+  if(req.body.question4 == "hamstaf" || req.body.question4 == "cancorso" || req.body.question4 == "chiwawa" ){
        res.render('quiz5')
   }else{
    res.render('quiz4')
   }
 
-  console.log(req.body.question1)
+  console.log(req.body.question4)
+  res.end()
+}
+
+
+exports.post5 = (req,res)=>{
+
+
+  if(req.body.question5 == "soupe" || req.body.question5 == "minsao" || req.body.question5 == "frite" ){
+       res.render('finish')
+  }else{
+   res.render('quiz5')
+  }
+
+  console.log(req.body.question5)
   res.end()
 }
