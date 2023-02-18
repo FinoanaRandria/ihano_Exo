@@ -102,3 +102,6 @@ exports.post5 = (req,res)=>{
   console.log(req.body.question5)
   res.end()
 }
+
+/* render rend une vue lesy/
+/* contrairemnt a render  redirect premet de rediriger  vers un autre lien */
