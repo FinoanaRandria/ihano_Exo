@@ -1,3 +1,5 @@
+/* get */
+
 exports.home = (req, res) => {
   res.render("home");
 };
@@ -5,15 +7,41 @@ exports.home = (req, res) => {
 exports.quiz = (req,res)=>{
     res.render('quiz1')
 }
+
+
+exports.quiz2 = (req,res)=>{
+
+    res.render('quiz2')
+}
+
+exports.quiz3 = (req,res)=>{
+   res.render('quiz3')
+    
+}
+
+exports.quiz4 = (req,res)=>{
+  res.render('quiz4')
+    
+}
+
+exports.quiz5 = (req,res)=>{
+  res.render('quiz5')
+      
+}
+
+exports.finish = (req,res) =>{
+  res.render('finish')
+}
+
 /* post */
 
 exports.post1 = (req,res)=>{
 
 
        if(req.body.question1 == "finoana" || req.body.question1 == "landry" || req.body.question1 == "tolotra" || req.body.question1 == "jose" || req.body.question1 == "tohy" || req.body.question1 == "johana" ){
-            res.render('quiz2')
+            res.redirect('/qest2')
        }else{
-        res.render('quiz1')
+        res.redirect('/qest1')
        }
 
        console.log(req.body.question1)
@@ -24,9 +52,9 @@ exports.post2 = (req,res)=>{
 
 
   if(req.body.question2 == "masisou" || req.body.question2 == "dubai" || req.body.question2 == "sql" ){
-       res.render('quiz3')
+       res.redirect('/qest3')
   }else{
-   res.render('quiz2')
+   res.redirect('/qest2')
   }
 
   console.log(req.body.question2)
@@ -38,9 +66,9 @@ exports.post3 = (req,res)=>{
 
 
   if(req.body.question3 == "eliot" || req.body.question3 == "angela" || req.body.question3 == "whiterose" ){
-       res.render('quiz4')
+       res.redirect('/qest4')
   }else{
-   res.render('quiz3')
+   res.redirect('/qest3')
   }
 
   console.log(req.body.question3)
@@ -52,9 +80,9 @@ exports.post4 = (req,res)=>{
 
 
   if(req.body.question4 == "hamstaf" || req.body.question4 == "cancorso" || req.body.question4 == "chiwawa" ){
-       res.render('quiz5')
+       res.redirect('/qest5')
   }else{
-   res.render('quiz4')
+   res.redirect('qest')
   }
 
   console.log(req.body.question4)
@@ -66,9 +94,9 @@ exports.post5 = (req,res)=>{
 
 
   if(req.body.question5 == "soupe" || req.body.question5 == "minsao" || req.body.question5 == "frite" ){
-       res.render('finish')
+       res.redirect('/finish')
   }else{
-   res.render('quiz5')
+   res.redirect('/qest5')
   }
 
   console.log(req.body.question5)

@@ -1,6 +1,6 @@
 
 const {Router} = require('express')
-const {home,quiz} = require('./controllers/ctrl')
+const {home,quiz,quiz2,quiz3,quiz4,quiz5,finish} = require('./controllers/ctrl')
 const {post1,post2,post3,post4,post5} = require('./controllers/ctrl')
 const router = Router()
 
@@ -8,8 +8,12 @@ const router = Router()
 
 router.get('/',home)
 
-router.get('/Quest',quiz)
-
+router.get('/qest+1',quiz)
+router.get('/qest2',quiz2)
+router.get('/qest3',quiz3)
+router.get('/qest4',quiz4)
+router.get('/qest5',quiz5)
+router.get('/finish',finish)
 
 
 /* partie post */
