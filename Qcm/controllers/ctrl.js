@@ -14,7 +14,7 @@ exports.quiz2 = (req,res)=>{
     res.render('quiz2')
 }
 
-/* exports.quiz3 = (req,res)=>{
+exports.quiz3 = (req,res)=>{
    res.render('quiz3')
     
 }
@@ -31,7 +31,7 @@ exports.quiz5 = (req,res)=>{
 
 exports.finish = (req,res) =>{
   res.render('finish')
-} */
+}
 
 /* post */
 
@@ -76,10 +76,10 @@ exports.post3 = (req,res)=>{
 exports.post4 = (req,res)=>{
 
 
-  if(req.body.options == 'chiwawa'){
-    res.redirect('/qest4')
+  if(req.body.options == 'backend'){
+    res.redirect('/qest5')
   }else{
-     res.redirect('/qest3')
+     res.redirect('/qest4')
   }
  console.log(req.body)
       res.end()
@@ -89,10 +89,10 @@ exports.post4 = (req,res)=>{
 exports.post5 = (req,res)=>{
 
 
-  if(req.body.options == 'minsao'){
-    res.redirect('/qest4')
+  if(req.body.options == 'vscode'){
+    res.redirect('/finish')
   }else{
-     res.redirect('/qest3')
+     res.redirect('/qest5')
   }
  console.log(req.body)
       res.end()
