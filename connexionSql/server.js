@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const session = require('express-session');
-const port = 3009;
+const port = 3003;
 const routes = require('./routes/routes');
 const bodyparser = require('body-parser');
 
