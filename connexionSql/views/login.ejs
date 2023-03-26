@@ -9,8 +9,27 @@
 <body>
       <div class="containr">
 
+
+   <div>
+      <% if (session.user_id) { %>
+             <h1> Wwllcome user </h1>
+
+             <a href="/logout">Logout</a>
+        <% }else{ %>
+   
+          <%  
+             }%>
+   </div>
+
+
+
+
+
+
+
+
          <h1>Se connecter</h1>
-          <form action="/log">
+          <form  method="post" action="/log">
 
             <label for="">login</label>
             <br>
@@ -19,6 +38,9 @@
             <label for="">Mot de passe</label>
             <br>
              <input type="text" name="pass" >
+               <br>
+                      
+               <button type="submit">Login</button>
                <br>
              <a href="/register">Creer un nouveau compte</a>
 

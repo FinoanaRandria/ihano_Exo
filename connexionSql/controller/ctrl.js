@@ -1,10 +1,12 @@
+const database = require('../model/db')
+
 /* ---get--- */
 exports.register = (req,res)=>{
     res.render('register')
 }
 
 exports.login = (req,res)=>{
-    res.render('login')
+    res.render('login', {session: req.session})
 }
 
 

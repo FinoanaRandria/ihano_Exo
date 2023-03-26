@@ -18,3 +18,7 @@ connection.connect(function(error){
       console.log('Mysql database is connected Successfully');
     }
 });
+
+/* puis exporter */
+
+module.exports = connection;
