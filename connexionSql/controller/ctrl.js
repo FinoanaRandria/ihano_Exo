@@ -10,6 +10,9 @@ exports.login = (req,res)=>{
     res.render('login', {session: req.session})
 }
 
+exports.acceuil = (req,res)=>{
+     res.render('acceuil')
+}
 
 
 /* ---post--- */
@@ -34,6 +37,10 @@ exports.post2 = (req,res)=>{
   }else{
         res.send(' veuillez entrer votre email et votre mot de passe ')
   }
+      
 
+
+
+  res.redirect('/acceui')
  res.end()
 }
